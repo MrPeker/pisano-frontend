@@ -2,14 +2,14 @@ import React from 'react';
 import { Router as DefaultRouter, Route, Switch } from 'react-router-dom';
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/_renderRoutes';
-import RendererWrapper0 from 'C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/pages/.umi/LocaleWrapper.jsx'
+import RendererWrapper0 from '/Users/mrpeker/development/GitHub/pisano-frontend/src/pages/.umi/LocaleWrapper.jsx'
 
 let Router = require('dva/router').routerRedux.ConnectedRouter;
 
 let routes = [
   {
     "path": "/user",
-    "component": dynamic({ loader: () => import('../../layouts/UserLayout'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+    "component": dynamic({ loader: () => import('../../layouts/UserLayout'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
     "routes": [
       {
         "path": "/user",
@@ -18,27 +18,27 @@ let routes = [
       },
       {
         "path": "/user/login",
-        "component": dynamic({ loader: () => import('../User/Login'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+        "component": dynamic({ loader: () => import('../User/Login'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
         "exact": true
       },
       {
         "path": "/user/register",
-        "component": dynamic({ loader: () => import('../User/Register'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+        "component": dynamic({ loader: () => import('../User/Register'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
         "exact": true
       },
       {
         "path": "/user/register-result",
-        "component": dynamic({ loader: () => import('../User/RegisterResult'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+        "component": dynamic({ loader: () => import('../User/RegisterResult'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
         "exact": true
       },
       {
-        "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+        "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
       }
     ]
   },
   {
     "path": "/",
-    "component": dynamic({ loader: () => import('../../layouts/BasicLayout'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+    "component": dynamic({ loader: () => import('../../layouts/BasicLayout'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
     "Routes": [require('../Authorized').default],
     "authority": [
       "admin",
@@ -58,29 +58,29 @@ let routes = [
           {
             "path": "/dashboard/urunAra",
             "name": "urunAra",
-            "component": dynamic({ loader: () => import('../Dashboard/urunAra'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Dashboard/urunAra'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/dashboard/kaydedilenler",
             "name": "kaydedilenler",
-            "component": dynamic({ loader: () => import('../Dashboard/kaydedilenler'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Dashboard/kaydedilenler'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/dashboard/ziyaretEdilenler",
             "name": "ziyaretEdilenler",
-            "component": dynamic({ loader: () => import('../Dashboard/ziyaretEdilenler'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Dashboard/ziyaretEdilenler'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/dashboard/okutulmusUrunler",
             "name": "okutulmusUrunler",
-            "component": dynamic({ loader: () => import('../Dashboard/okutulmusUrunler'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Dashboard/okutulmusUrunler'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -92,17 +92,17 @@ let routes = [
           {
             "path": "/Notlar/Listeler",
             "name": "Listeler",
-            "component": dynamic({ loader: () => import('../Notlar/Listeler'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Notlar/Listeler'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/Notlar/ekrangoruntu",
             "name": "ekrangoruntu",
-            "component": dynamic({ loader: () => import('../Notlar/ekrangoruntu'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Notlar/ekrangoruntu'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -114,11 +114,11 @@ let routes = [
           {
             "path": "/TrendlerAp/trendler",
             "name": "trendler",
-            "component": dynamic({ loader: () => import('../TrendlerAp/trendler'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../TrendlerAp/trendler'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -130,11 +130,11 @@ let routes = [
           {
             "path": "/GoogleAp/google",
             "name": "google",
-            "component": dynamic({ loader: () => import('../GoogleAp/google'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../GoogleAp/google'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -146,11 +146,11 @@ let routes = [
           {
             "path": "/SozulukAp/sozluk",
             "name": "Sozluk",
-            "component": dynamic({ loader: () => import('../SozlukAp/sozluk'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../SozlukAp/sozluk'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -162,11 +162,11 @@ let routes = [
           {
             "path": "/TranslateAp/translate",
             "name": "translate",
-            "component": dynamic({ loader: () => import('../TranslateAp/translate'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../TranslateAp/translate'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -178,11 +178,11 @@ let routes = [
           {
             "path": "/KisiAp/kisi",
             "name": "kisi",
-            "component": dynamic({ loader: () => import('../KisiAp/kisi'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../KisiAp/kisi'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -194,11 +194,11 @@ let routes = [
           {
             "path": "/VikipediaAp/vikipedia",
             "name": "vikipedia",
-            "component": dynamic({ loader: () => import('../VikipediaAp/vikipedia'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../VikipediaAp/vikipedia'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -210,13 +210,13 @@ let routes = [
           {
             "path": "/form/basic-form",
             "name": "basicform",
-            "component": dynamic({ loader: () => import('../Forms/BasicForm'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Forms/BasicForm'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/form/step-form",
             "name": "stepform",
-            "component": dynamic({ loader: () => import('../Forms/StepForm'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Forms/StepForm'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "hideChildrenInMenu": true,
             "routes": [
               {
@@ -228,23 +228,23 @@ let routes = [
               {
                 "path": "/form/step-form/info",
                 "name": "info",
-                "component": dynamic({ loader: () => import('../Forms/StepForm/Step1'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Forms/StepForm/Step1'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/form/step-form/confirm",
                 "name": "confirm",
-                "component": dynamic({ loader: () => import('../Forms/StepForm/Step2'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Forms/StepForm/Step2'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/form/step-form/result",
                 "name": "result",
-                "component": dynamic({ loader: () => import('../Forms/StepForm/Step3'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Forms/StepForm/Step3'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
@@ -254,11 +254,11 @@ let routes = [
             "authority": [
               "admin"
             ],
-            "component": dynamic({ loader: () => import('../Forms/AdvancedForm'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Forms/AdvancedForm'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -270,25 +270,25 @@ let routes = [
           {
             "path": "/list/table-list",
             "name": "searchtable",
-            "component": dynamic({ loader: () => import('../List/TableList'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../List/TableList'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/list/basic-list",
             "name": "basiclist",
-            "component": dynamic({ loader: () => import('../List/BasicList'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../List/BasicList'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/list/card-list",
             "name": "cardlist",
-            "component": dynamic({ loader: () => import('../List/CardList'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../List/CardList'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/list/search",
             "name": "searchlist",
-            "component": dynamic({ loader: () => import('../List/List'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../List/List'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "routes": [
               {
                 "path": "/list/search",
@@ -298,28 +298,28 @@ let routes = [
               {
                 "path": "/list/search/articles",
                 "name": "articles",
-                "component": dynamic({ loader: () => import('../List/Articles'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../List/Articles'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/list/search/projects",
                 "name": "projects",
-                "component": dynamic({ loader: () => import('../List/Projects'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../List/Projects'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/list/search/applications",
                 "name": "applications",
-                "component": dynamic({ loader: () => import('../List/Applications'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../List/Applications'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -331,7 +331,7 @@ let routes = [
           {
             "path": "/profile/basic",
             "name": "basic",
-            "component": dynamic({ loader: () => import('../Profile/BasicProfile'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Profile/BasicProfile'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
@@ -340,11 +340,11 @@ let routes = [
             "authority": [
               "admin"
             ],
-            "component": dynamic({ loader: () => import('../Profile/AdvancedProfile'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Profile/AdvancedProfile'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -356,17 +356,17 @@ let routes = [
           {
             "path": "/result/success",
             "name": "success",
-            "component": dynamic({ loader: () => import('../Result/Success'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Result/Success'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/result/fail",
             "name": "fail",
-            "component": dynamic({ loader: () => import('../Result/Error'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Result/Error'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -378,30 +378,30 @@ let routes = [
           {
             "path": "/exception/403",
             "name": "not-permission",
-            "component": dynamic({ loader: () => import('../Exception/403'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Exception/403'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/exception/404",
             "name": "not-find",
-            "component": dynamic({ loader: () => import('../Exception/404'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Exception/404'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/exception/500",
             "name": "server-error",
-            "component": dynamic({ loader: () => import('../Exception/500'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Exception/500'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
             "path": "/exception/trigger",
             "name": "trigger",
             "hideInMenu": true,
-            "component": dynamic({ loader: () => import('../Exception/TriggerException'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Exception/TriggerException'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "exact": true
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
@@ -413,7 +413,7 @@ let routes = [
           {
             "path": "/account/center",
             "name": "center",
-            "component": dynamic({ loader: () => import('../Account/Center/Center'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Account/Center/Center'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "routes": [
               {
                 "path": "/account/center",
@@ -422,28 +422,28 @@ let routes = [
               },
               {
                 "path": "/account/center/articles",
-                "component": dynamic({ loader: () => import('../Account/Center/Articles'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Center/Articles'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/account/center/applications",
-                "component": dynamic({ loader: () => import('../Account/Center/Applications'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Center/Applications'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/account/center/projects",
-                "component": dynamic({ loader: () => import('../Account/Center/Projects'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Center/Projects'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
           {
             "path": "/account/settings",
             "name": "settings",
-            "component": dynamic({ loader: () => import('../Account/Settings/Info'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+            "component": dynamic({ loader: () => import('../Account/Settings/Info'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
             "routes": [
               {
                 "path": "/account/settings",
@@ -452,45 +452,45 @@ let routes = [
               },
               {
                 "path": "/account/settings/base",
-                "component": dynamic({ loader: () => import('../Account/Settings/BaseView'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Settings/BaseView'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/account/settings/security",
-                "component": dynamic({ loader: () => import('../Account/Settings/SecurityView'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Settings/SecurityView'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/account/settings/binding",
-                "component": dynamic({ loader: () => import('../Account/Settings/BindingView'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Settings/BindingView'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
                 "path": "/account/settings/notification",
-                "component": dynamic({ loader: () => import('../Account/Settings/NotificationView'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+                "component": dynamic({ loader: () => import('../Account/Settings/NotificationView'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
                 "exact": true
               },
               {
-                "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+                "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
               }
             ]
           },
           {
-            "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+            "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
           }
         ]
       },
       {
-        "component": dynamic({ loader: () => import('../404'), loading: require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
+        "component": dynamic({ loader: () => import('../404'), loading: require('/Users/mrpeker/development/GitHub/pisano-frontend/src/components/PageLoading/index').default  }),
         "exact": true
       },
       {
-        "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+        "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
       }
     ]
   },
   {
-    "component": () => React.createElement(require('C:/Users/ASUS/Documents/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
+    "component": () => React.createElement(require('/Users/mrpeker/development/GitHub/pisano-frontend/node_modules/umi-build-dev/lib/plugins/404/NotFound.js').default, { pagesPath: 'src/pages', hasRoutesInConfig: true })
   }
 ];
 window.g_plugins.applyForEach('patchRoutes', { initialValue: routes });

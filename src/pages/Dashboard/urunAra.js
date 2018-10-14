@@ -45,6 +45,7 @@ class Analysis extends Component {
   state = {
     list: {},
     loading: true,
+    products: null,
   };
 
   componentDidMount() {
@@ -74,48 +75,84 @@ class Analysis extends Component {
     alert('merhaba2');
   };
 
-  handleChange = () => {
-    alert('merhaba');
+  fetchProducts;
+
+  handleChange = e => {
+    let url =
+      'http://ec2-35-156-118-97.eu-central-1.compute.amazonaws.com/product/search/' +
+      e.target.value;
+    clearTimeout(this.fetchProducts);
+    let that = this;
+    this.fetchProducts = setTimeout(() => {
+      let xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          let response = JSON.parse(this.responseText);
+          if (response.status) {
+            console.log(response.products);
+            that.setState({
+              products: response.products,
+            });
+          } else {
+            if (response.message === 'noResult') {
+              that.setState({
+                products: [],
+              });
+            } else {
+            }
+          }
+        }
+      };
+      xhttp.open('GET', url, true);
+      xhttp.send();
+    }, 500);
   };
+
   render() {
-    const {
-      list: { list = [] },
-    } = this.state;
+    const { products } = this.state;
 
-    const { loading: propsLoding } = this.state;
+    const { loading: propsLoading } = this.state;
     const { loading: stateLoading } = this.props;
-    const loading = propsLoding || stateLoading;
+    const loading = propsLoading || stateLoading;
 
-    const cardList = list ? (
+    const cardList = products ? (
       <List
         rowKey="id"
         loading={loading}
-        grid={{ gutter: 24, xl: 4, lg: 3, md: 3, sm: 2, xs: 1 }}
-        dataSource={list}
+        grid={{ gutter: 12, xl: 4, lg: 3, md: 2, sm: 1, xs: 1 }}
+        dataSource={products}
         renderItem={item => (
           <List.Item>
             <Card
               className={styles.card}
               hoverable
-              cover={<img alt={item.title} src={item.cover} />}
+              cover={
+                <img
+                  style={{
+                    maxHeight: '300px',
+                    width: 'unset',
+                    maxWidth: '100%',
+                    margin: '5px auto',
+                  }}
+                  alt={item.title}
+                  src={item.image}
+                />
+              }
             >
               <Card.Meta
                 title={<a>{item.title}</a>}
-                description={<Ellipsis lines={2}>{item.subDescription}</Ellipsis>}
+                description={
+                  <Ellipsis lines={2}>
+                    {item.seller ? item.seller.title : 'Ülkemizde Satışı Yok'}
+                  </Ellipsis>
+                }
               />
-              <div className={styles.cardItemContent}>
-                <span>{moment(item.updatedAt).fromNow()}</span>
-                <div className={styles.avatarList}>
-                  <AvatarList size="mini">
-                    {item.members.map((member, i) => (
-                      <AvatarList.Item
-                        key={`${item.id}-avatar-${i}`}
-                        src={member.avatar}
-                        tips={member.name}
-                      />
-                    ))}
-                  </AvatarList>
-                </div>
+              <div className={styles.cardItemContent} style={{ textAlign: 'center' }}>
+                <span style={{ display: 'block', width: '100%', textAlign: 'center' }}>
+                  {item.rate || 0}
+                  /5 - {item.seller ? item.seller.seller : ''} -{' '}
+                  {item.seller ? item.seller.price : '0'}₺
+                </span>
               </div>
             </Card>
           </List.Item>
@@ -125,7 +162,7 @@ class Analysis extends Component {
 
     return (
       <GridContent>
-        <Input style={{ width: 975 }} onChange={this.handleChange} onPressEnter={this.check} />
+        <Input onChange={this.handleChange} onPressEnter={this.check} />
         <div className={styles.coverCardList}>
           <div className={styles.cardList}>{cardList}</div>
         </div>

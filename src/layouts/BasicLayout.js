@@ -177,13 +177,13 @@ class BasicLayout extends React.PureComponent {
     const currRouterData = this.matchParamsPath(pathname);
 
     if (!currRouterData) {
-      return 'Ayzberg';
+      return 'Ayzberq';
     }
     const message = formatMessage({
       id: currRouterData.locale || currRouterData.name,
       defaultMessage: currRouterData.name,
     });
-    return `${message} - Ayzberg`;
+    return `${message} - Ayzberq`;
   };
 
   getLayoutStyle = () => {
